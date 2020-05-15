@@ -1,17 +1,21 @@
-function leftCounter(string){
+var leftScoreboard = {
+  "w" : 4,
+  "p": 3,
+  "b":2,
+  "s":1
+}
+
+
+function counter(object, string){
   total = 0
   for (i in string){
-    let letter = string[i]
-    if (letter == "w"){
-      total += 4
+    let letter = object[string[i]]
+    if (letter != undefined){
+      total += Number(letter)
     }
-    else if (letter == "p")
+    else{}
   }
+  return total
 }
 
 
-}
-function alphabetWar(fight)
-{
-   return "Let's fight again!";
-}
